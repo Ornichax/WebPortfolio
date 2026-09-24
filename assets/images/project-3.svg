@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="p3Bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#091426" />
+      <stop offset="50%" stop-color="#0f2648" />
+      <stop offset="100%" stop-color="#172554" />
+    </linearGradient>
+    <linearGradient id="p3PhoneGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="uiAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#p3Bg)"/>
+
+  <!-- Left Secondary Phone Frame -->
+  <g transform="translate(180, 70) rotate(-8 100 200)" opacity="0.65">
+    <rect width="180" height="340" rx="26" fill="url(#p3PhoneGrad)" stroke="rgba(255,255,255,0.2)" stroke-width="3"/>
+    <!-- Glass cards inside left phone -->
+    <rect x="20" y="40" width="140" height="70" rx="12" fill="rgba(56, 189, 248, 0.2)" stroke="rgba(56, 189, 248, 0.4)" stroke-width="1.5"/>
+    <circle cx="45" cy="75" r="15" fill="#f59e0b"/>
+    <line x1="70" y1="68" x2="140" y2="68" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+    <line x1="70" y1="82" x2="110" y2="82" stroke="#94a3b8" stroke-width="3" stroke-linecap="round"/>
+
+    <rect x="20" y="130" width="140" height="90" rx="12" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)"/>
+    <circle cx="90" cy="175" r="22" fill="#38bdf8" opacity="0.8"/>
+  </g>
+
+  <!-- Right Secondary Phone Frame -->
+  <g transform="translate(440, 70) rotate(8 100 200)" opacity="0.65">
+    <rect width="180" height="340" rx="26" fill="url(#p3PhoneGrad)" stroke="rgba(255,255,255,0.2)" stroke-width="3"/>
+    <rect x="20" y="40" width="140" height="120" rx="12" fill="rgba(245, 158, 11, 0.18)" stroke="rgba(245, 158, 11, 0.4)" stroke-width="1.5"/>
+    <path d="M 30 130 C 60 100, 100 150, 150 110" fill="none" stroke="#fbbf24" stroke-width="3"/>
+  </g>
+
+  <!-- Main Center Phone Frame (Hero UI) -->
+  <g transform="translate(295, 40)">
+    <rect width="210" height="400" rx="32" fill="#090d16" stroke="url(#uiAccent)" stroke-width="3.5" filter="drop-shadow(0 15px 30px rgba(0,0,0,0.7))"/>
+    
+    <!-- Dynamic Island / Speaker -->
+    <rect x="75" y="14" width="60" height="16" rx="8" fill="#000000" />
+    <circle cx="120" cy="22" r="3" fill="#38bdf8" />
+
+    <!-- App Header -->
+    <text x="25" y="60" font-family="'Prompt', sans-serif" font-size="12" font-weight="600" fill="#38bdf8">LIVE STAGE</text>
+    <text x="25" y="82" font-family="'Prompt', sans-serif" font-size="17" font-weight="700" fill="#ffffff">Aetheria Fest</text>
+
+    <!-- Hero Card inside App -->
+    <rect x="20" y="100" width="170" height="120" rx="16" fill="url(#uiAccent)" opacity="0.85"/>
+    <text x="35" y="140" font-family="'Prompt', sans-serif" font-size="14" font-weight="bold" fill="#0f172a">MAIN ARENA</text>
+    <text x="35" y="162" font-family="'Prompt', sans-serif" font-size="11" font-weight="600" fill="#0f172a">Electronic Visuals</text>
+    <rect x="35" y="180" width="70" height="24" rx="12" fill="#0f172a"/>
+    <text x="70" y="196" font-family="'Prompt', sans-serif" font-size="10" font-weight="bold" fill="#fbbf24" text-anchor="middle">WATCH</text>
+
+    <!-- Schedule Item 1 -->
+    <rect x="20" y="235" width="170" height="48" rx="12" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)"/>
+    <circle cx="42" cy="259" r="12" fill="#38bdf8"/>
+    <text x="65" y="254" font-family="'Prompt', sans-serif" font-size="11" font-weight="bold" fill="#ffffff">DJ Neon Echo</text>
+    <text x="65" y="268" font-family="'Prompt', sans-serif" font-size="9" fill="#94a3b8">21:00 - 23:00</text>
+
+    <!-- Schedule Item 2 -->
+    <rect x="20" y="292" width="170" height="48" rx="12" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)"/>
+    <circle cx="42" cy="316" r="12" fill="#fbbf24"/>
+    <text x="65" y="311" font-family="'Prompt', sans-serif" font-size="11" font-weight="bold" fill="#ffffff">Synthetica 3D</text>
+    <text x="65" y="325" font-family="'Prompt', sans-serif" font-size="9" fill="#94a3b8">23:00 - 01:00</text>
+
+    <!-- Bottom Navigation Bar inside App -->
+    <rect x="20" y="355" width="170" height="32" rx="16" fill="rgba(30, 41, 59, 0.9)" stroke="rgba(255,255,255,0.1)"/>
+    <circle cx="45" cy="371" r="5" fill="#38bdf8"/>
+    <circle cx="85" cy="371" r="5" fill="#64748b"/>
+    <circle cx="125" cy="371" r="5" fill="#64748b"/>
+    <circle cx="165" cy="371" r="5" fill="#64748b"/>
+  </g>
+
+  <!-- UX Tag badge -->
+  <text x="400" y="475" font-family="'Prompt', sans-serif" font-size="18" font-weight="700" fill="#fbbf24" text-anchor="middle" letter-spacing="3">AETHERIA MOBILE UI/UX EXPERIENCE</text>
+</svg>

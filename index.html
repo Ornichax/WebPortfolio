@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html lang="th" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creative Media Portfolio | พอร์ตโฟลิโอนักศึกษาสาขาสื่อนฤมิต</title>
+  <meta name="description" content="เว็บไซต์ Portfolio ส่วนตัวสำหรับนักศึกษาสาขาสื่อนฤมิต (Creative Media) รวบรวมผลงาน Motion Graphic, Video Editing, UI/UX, Web Design และ AI Media">
+  <meta name="keywords" content="Creative Media, สื่อนฤมิต, Portfolio, UI/UX, Motion Graphic, Graphic Design, Video Editing, Web Design">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Google Fonts (Prompt & JetBrains Mono) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Prompt:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Font Awesome 6 CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom Modular CSS Files (แยกตามส่วนและฟังก์ชัน) -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/hero.css">
+  <link rel="stylesheet" href="assets/css/about.css">
+  <link rel="stylesheet" href="assets/css/skills.css">
+  <link rel="stylesheet" href="assets/css/portfolio.css">
+  <link rel="stylesheet" href="assets/css/contact.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       1. Preloader (Loading Animation)
+       ======================================================================== -->
+  <div id="preloader" aria-label="Loading screen">
+    <div class="loader-spinner"></div>
+    <div class="loader-text">CREATIVE MEDIA PORTFOLIO</div>
+  </div>
+
+  <!-- ========================================================================
+       2. Navigation Bar (Sticky Navigation & Theme Switcher)
+       ======================================================================== -->
+  <header>
+    <nav class="navbar navbar-expand-lg custom-navbar" id="mainNavbar">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand navbar-brand-creative" href="#home">
+          <div class="brand-icon-box">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+          </div>
+          <span class="brand-text">CM<span class="text-gradient-primary">STUDIO</span></span>
+          <span class="brand-badge d-none d-sm-inline-block">Creative Media</span>
+        </a>
+
+        <!-- Right Controls: Theme Switcher & Mobile Toggler -->
+        <div class="d-flex align-items-center gap-2 order-lg-last">
+          <!-- Dark / Light Mode Switcher Button -->
+          <button type="button" class="theme-switch-btn" aria-label="Switch Theme" title="สลับโหมดสว่าง/มืด">
+            <i class="fa-solid fa-sun theme-icon"></i>
+          </button>
+
+          <!-- Mobile Hamburger Toggler -->
+          <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars-staggered"></i>
+          </button>
+        </div>
+
+        <!-- Navigation Menu Links -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home"><i class="fa-solid fa-house me-1"></i> Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about"><i class="fa-solid fa-user-astronaut me-1"></i> About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills"><i class="fa-solid fa-layer-group me-1"></i> Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio"><i class="fa-solid fa-photo-film me-1"></i> Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact"><i class="fa-solid fa-paper-plane me-1"></i> Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ========================================================================
+       3. Hero Section (Gradient Animated Background, Profile Avatar & CTA)
+       ======================================================================== -->
+  <main>
+    <section class="hero-section" id="home">
+      <!-- Animated Mesh Gradient Blobs & Subtle Grid Overlay -->
+      <div class="hero-bg-shapes">
+        <div class="shape-blob blob-1"></div>
+        <div class="shape-blob blob-2"></div>
+        <div class="shape-blob blob-3"></div>
+        <div class="hero-grid-overlay"></div>
+      </div>
+
+      <div class="container position-relative">
+        <div class="row align-items-center gy-5">
+          <!-- Hero Text & Intro -->
+          <div class="col-lg-7 text-center text-lg-start">
+            <!-- Availability Badge -->
+            <div class="reveal reveal-up">
+              <div class="hero-tag-badge">
+                <span class="status-dot"></span>
+                <span>Creative Media Student • Year 4</span>
+              </div>
+            </div>
+
+            <!-- Full Name & Title -->
+            <h1 class="hero-title reveal reveal-up delay-100">
+              สวัสดีค่ะ ฉัน <span class="text-gradient-primary">อรณิชา บุญกระโทก</span>
+            </h1>
+
+            <div class="hero-role reveal reveal-up delay-200">
+              <span>Creative Media Student</span>
+              <span class="hero-role-divider">•</span>
+              <span class="text-gradient-accent">Visual Storyteller & Digital Crafter</span>
+            </div>
+
+            <p class="hero-desc reveal reveal-up delay-300">
+              มุ่งมั่นผสานพลังแห่งความคิดสร้างสรรค์และเทคโนโลยีมัลติมีเดียสมัยใหม่ ทั้งงาน Motion Graphic, ตัดต่อวิดีโอระดับภาพยนตร์, การออกแบบ UI/UX ที่ตอบโจทย์มนุษย์ และการทดลองใช้ Generative AI สร้างสรรค์สื่อดิจิทัลแห่งอนาคต
+            </p>
+
+            <!-- Call To Action Buttons -->
+            <div class="hero-cta-group justify-content-center justify-content-lg-start reveal reveal-up delay-400">
+              <a href="#portfolio" class="btn-creative-primary">
+                <i class="fa-solid fa-briefcase"></i> ดูผลงาน
+              </a>
+              <a href="#contact" class="btn-creative-outline">
+                <i class="fa-solid fa-envelope"></i> ติดต่อ
+              </a>
+            </div>
+
+            <!-- Quick Social Media Links -->
+            <div class="hero-social-links justify-content-center justify-content-lg-start reveal reveal-up delay-500">
+              <span>Social Links:</span>
+              <a href="https://behance.net" target="_blank" rel="noopener noreferrer" class="hero-social-btn" title="Behance" aria-label="Behance">
+                <i class="fa-brands fa-behance"></i>
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="hero-social-btn" title="GitHub" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="hero-social-btn" title="Instagram" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="hero-social-btn" title="Facebook" aria-label="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Hero Profile Avatar Visual -->
+          <div class="col-lg-5">
+            <div class="hero-avatar-wrapper reveal reveal-right delay-200">
+              <div class="avatar-main-container">
+                <!-- Orbiting Rings -->
+                <div class="avatar-orbit-ring"></div>
+                <div class="avatar-orbit-ring-outer"></div>
+
+                <!-- Profile Graphic Image Placeholder -->
+                <img src="assets/images/avatar.svg" alt="รูปโปรไฟล์นักศึกษาสาขาสื่อนฤมิต" class="avatar-image">
+
+                <!-- Floating Badge 1 (Top Left) -->
+                <div class="floating-badge badge-top-left">
+                  <div class="badge-icon-wrap badge-icon-blue">
+                    <i class="fa-solid fa-clapperboard"></i>
+                  </div>
+                  <div class="badge-content">
+                    <h6>Media Creator</h6>
+                    <p>Motion & Video</p>
+                  </div>
+                </div>
+
+                <!-- Floating Badge 2 (Bottom Right) -->
+                <div class="floating-badge badge-bottom-right">
+                  <div class="badge-icon-wrap badge-icon-yellow">
+                    <i class="fa-solid fa-gem"></i>
+                  </div>
+                  <div class="badge-content">
+                    <h6>Creative Mind</h6>
+                    <p>UI/UX & AI Lab</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         4. About Me Section (ประวัติย่อ, การศึกษา, ความสนใจ, เป้าหมาย)
+         ======================================================================== -->
+    <section class="section-padding about-section" id="about">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="text-center mb-5 reveal reveal-up">
+          <span class="section-tag">
+            <i class="fa-solid fa-sparkles"></i> รู้จักตัวตนของฉัน
+          </span>
+          <h2 class="section-title">
+            เกี่ยวกับ <span class="text-gradient-primary">About Me</span>
+          </h2>
+          <p class="section-subtitle">
+            ความหลงใหลในการเล่าเรื่องผ่านสื่อสร้างสรรค์ การเรียนรู้ที่ไม่หยุดนิ่ง และเป้าหมายในการผลิตผลงานที่สร้างแรงบันดาลใจ
+          </p>
+        </div>
+
+        <!-- Quick Stats Grid -->
+        <div class="row g-4 mb-5 reveal reveal-up delay-100">
+          <div class="col-6 col-lg-3">
+            <div class="stats-card">
+              <div class="stats-number text-gradient-primary">4+</div>
+              <p class="stats-label">ปี ประสบการณ์เรียนรู้</p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="stats-card">
+              <div class="stats-number text-gradient-accent">25+</div>
+              <p class="stats-label">โปรเจกต์ที่สร้างสรรค์</p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="stats-card">
+              <div class="stats-number text-gradient-blue">10+</div>
+              <p class="stats-label">เครื่องมือ & ซอฟต์แวร์</p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="stats-card">
+              <div class="stats-number text-gradient-primary">100%</div>
+              <p class="stats-label">ความทุ่มเทและใส่ใจ</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4 align-items-stretch">
+          <!-- Left Column: Biography & Interests -->
+          <div class="col-lg-6 reveal reveal-left delay-200">
+            <div class="about-bio-card glass-card h-100">
+              <h3 class="h4 mb-3">
+                <i class="fa-solid fa-address-card text-gradient-primary me-2"></i> ประวัติย่อ (Biography)
+              </h3>
+              <p class="about-bio-lead">
+                “ผมเชื่อว่าสื่อที่ดีไม่ใช่แค่การมองเห็น แต่คือประสบการณ์ที่สัมผัสได้ถึงหัวใจ”
+              </p>
+              <p class="about-bio-desc">
+                ในฐานะนักศึกษาสาขาสื่อนฤมิต (Creative Media) ผมได้รับการฝึกฝนให้มีกระบวนการคิดเชิงออกแบบ (Design Thinking) ผสานกับทักษะทางเทคนิคทั้งด้าน Production, Motion Design, Interactive Media และ Frontend Development ทำให้สามารถแปลงแนวคิดเชิงนามธรรมให้กลายเป็นชิ้นงานดิจิทัลที่สื่อสารได้อย่างทรงพลังและจับต้องได้จริง
+              </p>
+
+              <!-- ความสนใจ (Interests) -->
+              <h4 class="h5 mt-4 mb-2">
+                <i class="fa-solid fa-heart text-gradient-accent me-2"></i> ความสนใจเฉพาะด้าน (Interests)
+              </h4>
+              <div class="interests-grid">
+                <div class="interest-tag">
+                  <i class="fa-solid fa-cube"></i> 3D Motion Design
+                </div>
+                <div class="interest-tag">
+                  <i class="fa-solid fa-film"></i> Cinematic Storytelling
+                </div>
+                <div class="interest-tag">
+                  <i class="fa-solid fa-mobile-screen-button"></i> UI/UX Micro-interactions
+                </div>
+                <div class="interest-tag">
+                  <i class="fa-solid fa-brain"></i> Generative AI in Art
+                </div>
+                <div class="interest-tag">
+                  <i class="fa-solid fa-vr-cardboard"></i> Interactive & VR Experiences
+                </div>
+                <div class="interest-tag">
+                  <i class="fa-solid fa-sliders"></i> Sound & Audio Design
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Education Timeline -->
+          <div class="col-lg-6 reveal reveal-right delay-200">
+            <div class="education-card glass-card">
+              <h3 class="h4 mb-3">
+                <i class="fa-solid fa-graduation-cap text-gradient-accent me-2"></i> ประวัติการศึกษา (Education)
+              </h3>
+
+              <div class="timeline-box">
+                <!-- Timeline 1: University -->
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <span class="timeline-year">2022 - ปัจจุบัน (ปี 4)</span>
+                  <h5>ระดับปริญญาตรี (วท.บ. / ศศ.บ.)</h5>
+                  <div class="timeline-sub">สาขาวิชาสื่อนฤมิต (Creative Media)</div>
+                  <p class="timeline-desc">
+                    ศึกษาด้านการออกแบบกราฟิก, โมชันกราฟิก, การผลิตสื่อภาพยนตร์และเสียง, ออกแบบ UI/UX, เว็บดีไซน์ และสื่ออินเทอร์แอคทีฟ เกียรตินิยมอันดับต้น และเป็นผู้นำทีมฝ่ายมีเดียในกิจกรรมมหาวิทยาลัย
+                  </p>
+                </div>
+
+                <!-- Timeline 2: High School -->
+                <div class="timeline-item">
+                  <div class="timeline-dot blue-dot"></div>
+                  <span class="timeline-year">2016 - 2022</span>
+                  <h5>ระดับมัธยมศึกษาตอนปลาย</h5>
+                  <div class="timeline-sub">แผนการเรียน วิทยาศาสตร์ - คอมพิวเตอร์</div>
+                  <p class="timeline-desc">
+                    พัฒนาพื้นฐานด้านตรรกะการเขียนโปรแกรม การออกแบบสื่อดิจิทัลเบื้องต้น และชนะการประกวดคลิปวิดีโอสร้างสรรค์ระดับเยาวชน
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Career Goals Banner -->
+        <div class="goals-banner reveal reveal-up delay-300">
+          <i class="fa-solid fa-quote-right goals-quote-icon"></i>
+          <h4>
+            <i class="fa-solid fa-bullseye text-gradient-accent me-2"></i> เป้าหมายในการทำงาน (Career Goals)
+          </h4>
+          <p>
+            มุ่งหวังที่จะก้าวเข้าสู่การเป็น <strong>Creative Technologist / Motion & UI/UX Specialist</strong> ในสตูดิโอสร้างสรรค์ชั้นนำ หรือบริษัทนวัตกรรมดิจิทัล พร้อมนำความรู้ทั้งด้านศิลปะและการเขียนโค้ดมาเชื่อมต่อจินตนาการให้กลายเป็นความจริง สร้างผลงานที่ตอบโจทย์ธุรกิจ ผู้ใช้ และสังคมอย่างมีความหมาย
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         5. Skills Section (10 หมวดหมู่ทักษะพร้อมไอคอนสวยงาม & ระดับความชำนาญ)
+         ======================================================================== -->
+    <section class="section-padding skills-section" id="skills">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="text-center mb-5 reveal reveal-up">
+          <span class="section-tag accent-tag">
+            <i class="fa-solid fa-bolt"></i> ความเชี่ยวชาญ
+          </span>
+          <h2 class="section-title">
+            ทักษะความสามารถ <span class="text-gradient-accent">Skills & Tools</span>
+          </h2>
+          <p class="section-subtitle">
+            ทักษะรอบด้านของนักศึกษาสื่อนฤมิตที่ผสมผสานทั้งศิลปะการออกแบบ การผลิตสื่อภาพและเสียง และเทคโนโลยีเว็บสมัยใหม่
+          </p>
+
+          <!-- Category Filter Tabs -->
+          <div class="skills-category-tabs mt-4">
+            <button type="button" class="skill-tab-btn active" data-filter="all">ทั้งหมด (All Skills)</button>
+            <button type="button" class="skill-tab-btn" data-filter="design">Visual & Design</button>
+            <button type="button" class="skill-tab-btn" data-filter="media">Media & Video</button>
+            <button type="button" class="skill-tab-btn" data-filter="tech">Web & AI Tech</button>
+          </div>
+        </div>
+
+        <!-- 10 Skills Grid -->
+        <div class="row g-4">
+          <!-- Skill 1: Graphic Design -->
+          <div class="col-md-6 col-lg-4 col-xl-2-4 skill-item-col" data-category="design">
+            <div class="skill-card reveal reveal-up delay-100">
+              <div class="skill-icon-wrapper skill-icon-blue">
+                <i class="fa-solid fa-pen-nib"></i>
+              </div>
+              <h3 class="skill-title">Graphic Design</h3>
+              <p class="skill-desc">
+                ออกแบบอัตลักษณ์แบรนด์, Logo, ภาพประกอบเวกเตอร์, สื่อสิ่งพิมพ์ และ Social Media Assets ที่ดึงดูดสายตา
+              </p>
+              <div class="skill-tools">
+                <span class="skill-tool-badge">Photoshop</span>
+                <span class="skill-tool-badge">Illustrator</span>
+              </div>
+              <div class="skill-progress-wrap">
+                <div class="skill-progress-header">
+                  <span>ความเชี่ยวชาญ</span>
+                  <span class="skill-percentage">95%</span>
+                </div>
+                <div class="skill-progress-bar-bg">
+                  <div class="skill-progress-bar-fill" data-width="95%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill 2: Photography -->
+          <div class="col-md-6 col-lg-4 col-xl-2-4 skill-item-col" data-category="media">
+            <div class="skill-card reveal reveal-up delay-150">
+              <div class="skill-icon-wrapper skill-icon-yellow">
+                <i class="fa-solid fa-camera-retro"></i>
+              </div>
+              <h3 class="skill-title">Photography</h3>
+              <p class="skill-desc">
+                การถ่ายภาพ Portrait, ผลิตภัณฑ์, ภาพถ่ายสตรีท จัดแสงสตูดิโอ และการเกรดสีภาพให้มีอารมณ์โดดเด่น
+              </p>
+              <div class="skill-tools">
+                <span class="skill-tool-badge">Lightroom</span>
+                <span class="skill-tool-badge">Studio Lights</span>
+              </div>
+              <div class="skill-progress-wrap">
+                <div class="skill-progress-header">
+                  <span>ความเชี่ยวชาญ</span>
+                  <span class="skill-percentage">88%</span>
+                </div>
+                <div class="skill-progress-bar-bg">
+                  <div class="skill-progress-bar-fill" data-width="88%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill 3: Video Editing -->
+          <div class="col-md-6 col-lg-4 col-xl-2-4 skill-item-col" data-category="media">
+            <div class="skill-card reveal reveal-up delay-200">
+              <div class="skill-icon-wrapper skill-icon-blue">
+                <i class="fa-solid fa-video"></i>
+              </div>
+              <h3 class="skill-title">Video Editing</h3>
+              <p class="skill-desc">
+                การตัดต่อภาพยนตร์สั้น, วิดีโอโปรโมท, มิวสิควิดีโอ, การคุมจังหวะเล่าเรื่อง (Pacing) และออกแบบเสียง
+              </p>
+              <div class="skill-tools">
+                <span class="skill-tool-badge">Premiere Pro</span>
+                <span class="skill-tool-badge">DaVinci</span>
+              </div>
+              <div class="skill-progress-wrap">
+                <div class="skill-progress-header">
+                  <span>ความเชี่ยวชาญ</span>
+                  <span class="skill-percentage">92%</span>
+                </div>
+                <div class="skill-progress-bar-bg">
+                  <div class="skill-progress-bar-fill" data-width="92%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill 4: Motion Graphic -->
+          <div class="col-md-6 col-lg-4 col-xl-2-4 skill-item-col" data-category="media design">
+            <div class="skill-card reveal reveal-up delay-250">
+              <div class="skill-icon-wrapper skill-icon-yellow">
+                <i class="fa-solid fa-film"></i>
+              </div>
+              <h3 class="skill-title">Motion Graphic</h3>
+              <p class="skill-desc">
+                สร้างภาพเคลื่อนไหว 2D/3D Kinetic Typography, Logo Animation, Visual Effects และ Infographic เคลื่อนไหว
+              </p>
+              <div class="skill-tools">
+                <span class="skill-tool-badge">After Effects</span>
+                <span class="skill-tool-badge">Cinema 4D</span>
+              </div>
+              <div class="skill-progress-wrap">
+                <div class="skill-progress-header">
+                  <span>ความเชี่ยวชาญ</span>
+                  <span class="skill-percentage">90%</span>
+                </div>
+                <div class="skill-progress-bar-bg">
+                  <div class="skill-progress-bar-fill" data-width="90%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill 5: UI/UX Design -->
+          <div class="col-md-6 col-lg-4 col-xl-2-4 skill-item-col" data-category="design tech">
+            <div class="skill-card reveal reveal-up delay-300">
+              <div class="skill-icon-wrapper skill-icon-blue">
+                <i class="fa-solid fa-palette"></i>
+              </div>
+              <h3 class="skill-title">UI/UX Design</h3>
+              <p class="skill-desc">
+                วิจัยพฤติกรรมผู้ใช้งาน, Wireframe, Prototyping, Design Systems และทดสอบความพึงพอใจการใช้งาน
+              </p>
+              <div class="skill-tools">
+                <span class="skill-tool-badge">Figma</span>
+                <span class="skill-tool-badge">ProtoPie</span>
+              </div>
+              <div class="skill-progress-wrap">
+                <div class="skill-progress-header">
+                  <span>ความเชี่ยวชาญ</span>
+                  <span class="skill-percentage">94%</span>
+                </div>
+                <div class="skill-progress-bar-bg">
+                  <div class="skill-progress-bar-fill" data-width="94%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill 6: Web Design -->
+          <div class="col-md-6 col-lg-4 col-xl-2-4 skill-item-col" data-category="design tech">
+            <div class="skill-card reveal reveal-up delay-350">
+              <div class="skill-icon-wrapper skill-icon-yellow">
+                <i class="fa-solid fa-desktop"></i>
+              </div>
+              <h3 class="skill-title">Web Design</h3>
+              <p class="skill-desc">
+                ออกแบบเลย์เอาต์หน้าเว็บที่สวยงาม ทันสมัย สไตล์ Minimal & Glassmorphism รองรับทุกขนาดหน้าจอ
+              </p>
+              <div class="skill-tools">
+                <span class="skill-tool-badge">Responsive</span>
+                <span class="skill-tool-badge">Design-to-Code</span>
+              </div>
+              <div class="skill-progress-wrap">
+                <div class="skill-progress-header">
+                  <span>ความเชี่ยวชาญ</span>
+                  <span class="skill-percentage">91%</span>
+                </div>
+                <div class="skill-progress-bar-bg">
+                  <div class="skill-progress-bar-fill" data-width="91%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill 7: HTML5 -->
+          <div class="col-md-6 col-lg-4 col-xl-2-4 skill-item-col" data-category="tech">
+            <div class="skill-card reveal reveal-up delay-400">
+              <div class="skill-icon-wrapper skill-icon-blue">
+                <i class="fa-brands fa-html5"></i>
+              </div>
+              <h3 class="skill-title">HTML5</h3>
+              <p class="skill-desc">
+                โครงสร้างเว็บแบบ Semantic ถูกต้องตามหลัก Accessibility (a11y), SEO-friendly และรองรับ Multimedia
+              </p>
+              <div class="skill-tools">
+                <span class="skill-tool-badge">Semantic</span>
+                <span class="skill-tool-badge">Canvas / Audio</span>
+              </div>
+              <div class="skill-progress-wrap">
+                <div class="skill-progress-header">
+                  <span>ความเชี่ยวชาญ</span>
+                  <span class="skill-percentage">93%</span>
+                </div>
+                <div class="skill-progress-bar-bg">
+                  <div class="skill-progress-bar-fill" data-width="93%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill 8: CSS3 -->
+          <div class="col-md-6 col-lg-4 col-xl-2-4 skill-item-col" data-category="tech">
+            <div class="skill-card reveal reveal-up delay-450">
+              <div class="skill-icon-wrapper skill-icon-yellow">
+                <i class="fa-brands fa-css3-alt"></i>
+              </div>
+              <h3 class="skill-title">CSS3</h3>
+              <p class="skill-desc">
+                CSS Grid, Flexbox, Keyframe Animations, Glassmorphism, CSS Variables, Bootstrap 5 และ Dark/Light Theming
+              </p>
+              <div class="skill-tools">
+                <span class="skill-tool-badge">Bootstrap 5</span>
+                <span class="skill-tool-badge">Animations</span>
+              </div>
+              <div class="skill-progress-wrap">
+                <div class="skill-progress-header">
+                  <span>ความเชี่ยวชาญ</span>
+                  <span class="skill-percentage">90%</span>
+                </div>
+                <div class="skill-progress-bar-bg">
+                  <div class="skill-progress-bar-fill" data-width="90%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill 9: JavaScript -->
+          <div class="col-md-6 col-lg-4 col-xl-2-4 skill-item-col" data-category="tech">
+            <div class="skill-card reveal reveal-up delay-500">
+              <div class="skill-icon-wrapper skill-icon-blue">
+                <i class="fa-brands fa-js"></i>
+              </div>
+              <h3 class="skill-title">JavaScript</h3>
+              <p class="skill-desc">
+                ES6+, DOM Manipulation, Interactive Micro-animations, IntersectionObserver, Fetch API และ Web APIs
+              </p>
+              <div class="skill-tools">
+                <span class="skill-tool-badge">ES6+</span>
+                <span class="skill-tool-badge">Interactive UI</span>
+              </div>
+              <div class="skill-progress-wrap">
+                <div class="skill-progress-header">
+                  <span>ความเชี่ยวชาญ</span>
+                  <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-progress-bar-bg">
+                  <div class="skill-progress-bar-fill" data-width="85%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill 10: AI Tools -->
+          <div class="col-md-6 col-lg-4 col-xl-2-4 skill-item-col" data-category="tech media">
+            <div class="skill-card reveal reveal-up delay-550">
+              <div class="skill-icon-wrapper skill-icon-yellow">
+                <i class="fa-solid fa-microchip"></i>
+              </div>
+              <h3 class="skill-title">AI Tools</h3>
+              <p class="skill-desc">
+                Generative Media, Prompt Crafting สำหรับสร้างภาพ Concept Art, ขยายภาพ, วิดีโอเจเนเรทีฟ และเพิ่มประสิทธิภาพงาน
+              </p>
+              <div class="skill-tools">
+                <span class="skill-tool-badge">Midjourney</span>
+                <span class="skill-tool-badge">Runway Gen-2</span>
+              </div>
+              <div class="skill-progress-wrap">
+                <div class="skill-progress-header">
+                  <span>ความเชี่ยวชาญ</span>
+                  <span class="skill-percentage">89%</span>
+                </div>
+                <div class="skill-progress-bar-bg">
+                  <div class="skill-progress-bar-fill" data-width="89%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         6. Portfolio Section (แสดงผลงาน 6 ชิ้น พร้อม Grid & Pop-up Modal)
+         ======================================================================== -->
+    <section class="section-padding portfolio-section" id="portfolio">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="text-center mb-5 reveal reveal-up">
+          <span class="section-tag">
+            <i class="fa-solid fa-shapes"></i> แฟ้มสะสมผลงาน
+          </span>
+          <h2 class="section-title">
+            ผลงานที่โดดเด่น <span class="text-gradient-primary">Featured Works</span>
+          </h2>
+          <p class="section-subtitle">
+            รวมโปรเจกต์สร้างสรรค์สื่อนฤมิต ตั้งแต่โมชันกราฟิก ภาพยนตร์สั้น การออกแบบ UI/UX ไปจนถึงการทดลองด้าน AI และเว็บอินเทอร์แอคทีฟ
+          </p>
+
+          <!-- Category Filter Pills -->
+          <div class="portfolio-filter-nav mt-4">
+            <button type="button" class="portfolio-filter-btn active" data-filter="all">ทั้งหมด (All)</button>
+            <button type="button" class="portfolio-filter-btn" data-filter="motion">Motion & Video</button>
+            <button type="button" class="portfolio-filter-btn" data-filter="uiux">UI/UX & Web</button>
+            <button type="button" class="portfolio-filter-btn" data-filter="visual">Visual & Photo</button>
+            <button type="button" class="portfolio-filter-btn" data-filter="ai">AI Media</button>
+          </div>
+        </div>
+
+        <!-- 6 Projects Responsive Grid -->
+        <div class="row g-4">
+          <!-- Project 1: Motion Graphic & Branding -->
+          <div class="col-md-6 col-lg-4 portfolio-item-col" data-category="motion">
+            <article class="portfolio-card reveal reveal-up delay-100">
+              <div class="portfolio-img-box">
+                <span class="portfolio-category-badge">Motion Graphic</span>
+                <img src="assets/images/project-1.svg" alt="Lumina Brand Identity & Motion Showcase" class="portfolio-img">
+                <div class="portfolio-overlay">
+                  <button type="button" class="portfolio-quick-btn" data-project-id="project1" title="เปิดดูผลงาน" aria-label="View Project 1">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="portfolio-body">
+                <h3 class="portfolio-title">Lumina Brand Identity & Motion</h3>
+                <p class="portfolio-excerpt">
+                  โปรเจกต์ออกแบบอัตลักษณ์แบรนด์แบบไดนามิกและภาพเคลื่อนไหวโมชันกราฟิก 3D Kinetic สำหรับสตูดิโอยุคใหม่
+                </p>
+                <div class="portfolio-footer">
+                  <div class="portfolio-tech-list">
+                    <i class="fa-solid fa-bezier-curve"></i> After Effects • C4D
+                  </div>
+                  <button type="button" class="btn-view-project" data-project-id="project1">
+                    ดูผลงาน <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Project 2: Video Editing & Photography -->
+          <div class="col-md-6 col-lg-4 portfolio-item-col" data-category="motion visual">
+            <article class="portfolio-card reveal reveal-up delay-200">
+              <div class="portfolio-img-box">
+                <span class="portfolio-category-badge">Video Editing</span>
+                <img src="assets/images/project-2.svg" alt="Neon Horizon - Cinematic Short Film & Color Grading" class="portfolio-img">
+                <div class="portfolio-overlay">
+                  <button type="button" class="portfolio-quick-btn" data-project-id="project2" title="เปิดดูผลงาน" aria-label="View Project 2">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="portfolio-body">
+                <h3 class="portfolio-title">Neon Horizon Short Film</h3>
+                <p class="portfolio-excerpt">
+                  ภาพยนตร์สั้นเชิงทดลองแนว Neo-Noir ถ่ายทอดภาพบรรยากาศแสงนีออนและการเกรดสีระดับภาพยนตร์ 4K
+                </p>
+                <div class="portfolio-footer">
+                  <div class="portfolio-tech-list">
+                    <i class="fa-solid fa-sliders"></i> DaVinci • Premiere Pro
+                  </div>
+                  <button type="button" class="btn-view-project" data-project-id="project2">
+                    ดูผลงาน <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Project 3: UI/UX Design -->
+          <div class="col-md-6 col-lg-4 portfolio-item-col" data-category="uiux">
+            <article class="portfolio-card reveal reveal-up delay-300">
+              <div class="portfolio-img-box">
+                <span class="portfolio-category-badge">UI/UX Design</span>
+                <img src="assets/images/project-3.svg" alt="Aetheria Music Festival - Mobile App & Interactive UI/UX" class="portfolio-img">
+                <div class="portfolio-overlay">
+                  <button type="button" class="portfolio-quick-btn" data-project-id="project3" title="เปิดดูผลงาน" aria-label="View Project 3">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="portfolio-body">
+                <h3 class="portfolio-title">Aetheria Festival Mobile App</h3>
+                <p class="portfolio-excerpt">
+                  ออกแบบ User Experience และ UI สไตล์ Glassmorphism สำหรับแอปพลิเคชันเทศกาลดนตรีและสื่อดิจิทัลแบบโต้ตอบ
+                </p>
+                <div class="portfolio-footer">
+                  <div class="portfolio-tech-list">
+                    <i class="fa-solid fa-mobile-screen"></i> Figma • ProtoPie
+                  </div>
+                  <button type="button" class="btn-view-project" data-project-id="project3">
+                    ดูผลงาน <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Project 4: Web Design & Creative Dev -->
+          <div class="col-md-6 col-lg-4 portfolio-item-col" data-category="uiux">
+            <article class="portfolio-card reveal reveal-up delay-400">
+              <div class="portfolio-img-box">
+                <span class="portfolio-category-badge">Web Design</span>
+                <img src="assets/images/project-4.svg" alt="CyberVerse 3D Interactive Web Experience" class="portfolio-img">
+                <div class="portfolio-overlay">
+                  <button type="button" class="portfolio-quick-btn" data-project-id="project4" title="เปิดดูผลงาน" aria-label="View Project 4">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="portfolio-body">
+                <h3 class="portfolio-title">CyberVerse 3D Interactive Web</h3>
+                <p class="portfolio-excerpt">
+                  เว็บไซต์จัดแสดงผลงานเชิงทดลองรูปแบบ 3D Interactive ผสาน WebGL และ Three.js ลื่นไหลและน่าตื่นตาตื่นใจ
+                </p>
+                <div class="portfolio-footer">
+                  <div class="portfolio-tech-list">
+                    <i class="fa-solid fa-code"></i> HTML5 • CSS3 • Three.js
+                  </div>
+                  <button type="button" class="btn-view-project" data-project-id="project4">
+                    ดูผลงาน <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Project 5: Photography & Visual Story -->
+          <div class="col-md-6 col-lg-4 portfolio-item-col" data-category="visual">
+            <article class="portfolio-card reveal reveal-up delay-500">
+              <div class="portfolio-img-box">
+                <span class="portfolio-category-badge">Photography</span>
+                <img src="assets/images/project-5.svg" alt="Urban Odyssey - Street Photography & Visual Story" class="portfolio-img">
+                <div class="portfolio-overlay">
+                  <button type="button" class="portfolio-quick-btn" data-project-id="project5" title="เปิดดูผลงาน" aria-label="View Project 5">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="portfolio-body">
+                <h3 class="portfolio-title">Urban Odyssey Street Visuals</h3>
+                <p class="portfolio-excerpt">
+                  บันทึกเรื่องราวแสง สี และผู้คนในกรุงเทพฯ ผ่านภาพถ่ายสตรีทยามเย็น แสง Golden Hour และเงาสะท้อนเมือง
+                </p>
+                <div class="portfolio-footer">
+                  <div class="portfolio-tech-list">
+                    <i class="fa-solid fa-camera"></i> 35mm Prime • Lightroom
+                  </div>
+                  <button type="button" class="btn-view-project" data-project-id="project5">
+                    ดูผลงาน <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Project 6: AI Tools & Media Project -->
+          <div class="col-md-6 col-lg-4 portfolio-item-col" data-category="ai motion">
+            <article class="portfolio-card reveal reveal-up delay-600">
+              <div class="portfolio-img-box">
+                <span class="portfolio-category-badge">AI Tools</span>
+                <img src="assets/images/project-6.svg" alt="AI-Infused Future Vision - Generative Media Project" class="portfolio-img">
+                <div class="portfolio-overlay">
+                  <button type="button" class="portfolio-quick-btn" data-project-id="project6" title="เปิดดูผลงาน" aria-label="View Project 6">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="portfolio-body">
+                <h3 class="portfolio-title">AI Generative Media Lab</h3>
+                <p class="portfolio-excerpt">
+                  งานทดลองการสร้างสรรค์มีเดียด้วย Generative AI ผสานการทำ Video Animation และ VFX ถ่ายทอดภาพโลกอนาคต
+                </p>
+                <div class="portfolio-footer">
+                  <div class="portfolio-tech-list">
+                    <i class="fa-solid fa-brain"></i> Midjourney • Runway Gen-2
+                  </div>
+                  <button type="button" class="btn-view-project" data-project-id="project6">
+                    ดูผลงาน <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         7. Contact Section (ข้อมูลติดต่อพร้อม Icon & Interactive Form)
+         ======================================================================== -->
+    <section class="section-padding contact-section" id="contact">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="text-center mb-5 reveal reveal-up">
+          <span class="section-tag accent-tag">
+            <i class="fa-solid fa-envelope-open-text"></i> ติดต่อร่วมงาน
+          </span>
+          <h2 class="section-title">
+            ติดต่อเรา <span class="text-gradient-accent">Get in Touch</span>
+          </h2>
+          <p class="section-subtitle">
+            ยินดีเปิดรับโอกาสฝึกงาน (Internship), ร่วมโปรเจกต์สร้างสรรค์สื่อ, หรือพูดคุยแลกเปลี่ยนไอเดียด้านสื่อนฤมิตครับ
+          </p>
+        </div>
+
+        <div class="row g-4 align-items-stretch">
+          <!-- Left Column: Contact Channels with Icons -->
+          <div class="col-lg-5 reveal reveal-left delay-100">
+            <div class="contact-card">
+              <h3 class="h4 mb-3">
+                <i class="fa-solid fa-address-book text-gradient-primary me-2"></i> ช่องทางการติดต่อ
+              </h3>
+              <p class="text-muted mb-4">
+                สามารถติดต่อผ่านช่องทางโซเชียลมีเดีย หรือส่งข้อความผ่านแบบฟอร์มด้านข้างได้ตลอดเวลา
+              </p>
+
+              <div class="contact-channels-list">
+                <!-- Email -->
+                <a href="mailto:student.creativemedia@email.com" class="contact-channel-item channel-email" title="คลิกเพื่อส่งอีเมลหรือคัดลอก">
+                  <div class="channel-icon">
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <div class="channel-info">
+                    <h6>Email</h6>
+                    <p>student.creativemedia@email.com</p>
+                  </div>
+                </a>
+
+                <!-- Facebook -->
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="contact-channel-item channel-facebook">
+                  <div class="channel-icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </div>
+                  <div class="channel-info">
+                    <h6>Facebook</h6>
+                    <p>facebook.com/creativemedia.portfolio</p>
+                  </div>
+                </a>
+
+                <!-- Instagram -->
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="contact-channel-item channel-instagram">
+                  <div class="channel-icon">
+                    <i class="fa-brands fa-instagram"></i>
+                  </div>
+                  <div class="channel-info">
+                    <h6>Instagram</h6>
+                    <p>@creative_media.journey</p>
+                  </div>
+                </a>
+
+                <!-- GitHub -->
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="contact-channel-item channel-github">
+                  <div class="channel-icon">
+                    <i class="fa-brands fa-github"></i>
+                  </div>
+                  <div class="channel-info">
+                    <h6>GitHub</h6>
+                    <p>github.com/creative-media-student</p>
+                  </div>
+                </a>
+
+                <!-- Behance -->
+                <a href="https://behance.net" target="_blank" rel="noopener noreferrer" class="contact-channel-item channel-behance">
+                  <div class="channel-icon">
+                    <i class="fa-brands fa-behance"></i>
+                  </div>
+                  <div class="channel-info">
+                    <h6>Behance</h6>
+                    <p>behance.net/creativemedia</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Contact Form -->
+          <div class="col-lg-7 reveal reveal-right delay-200">
+            <div class="contact-form-card">
+              <h3 class="h4 mb-3">
+                <i class="fa-solid fa-paper-plane text-gradient-accent me-2"></i> ส่งข้อความถึงผม
+              </h3>
+              <p class="text-muted mb-4">
+                กรอกข้อมูลด้านล่างเพื่อพูดคุยเรื่องโปรเจกต์ ข้อเสนอแนะ หรือสอบถามรายละเอียดเพิ่มเติม
+              </p>
+
+              <form id="contactForm" novalidate>
+                <div class="row g-3">
+                  <div class="col-md-6 form-group-custom">
+                    <label for="contactName" class="form-label-custom">
+                      ชื่อ-นามสกุล <span class="text-danger">*</span>
+                    </label>
+                    <input type="text" id="contactName" class="form-control-custom" placeholder="เช่น คุณสมชาย ใจดี" required>
+                  </div>
+
+                  <div class="col-md-6 form-group-custom">
+                    <label for="contactEmail" class="form-label-custom">
+                      อีเมลของคุณ <span class="text-danger">*</span>
+                    </label>
+                    <input type="email" id="contactEmail" class="form-control-custom" placeholder="name@example.com" required>
+                  </div>
+
+                  <div class="col-12 form-group-custom">
+                    <label for="contactSubject" class="form-label-custom">
+                      หัวข้อติดต่อ
+                    </label>
+                    <input type="text" id="contactSubject" class="form-control-custom" placeholder="เช่น เสนองานฟรีแลนซ์ / โอกาสฝึกงาน / ร่วมโปรเจกต์">
+                  </div>
+
+                  <div class="col-12 form-group-custom">
+                    <label for="contactMessage" class="form-label-custom">
+                      ข้อความของคุณ <span class="text-danger">*</span>
+                    </label>
+                    <textarea id="contactMessage" rows="5" class="form-control-custom" placeholder="เขียนรายละเอียดเกี่ยวกับสิ่งที่คุณต้องการพูดคุย..." required></textarea>
+                  </div>
+
+                  <div class="col-12 text-end">
+                    <button type="submit" class="btn-creative-accent w-100 w-md-auto">
+                      <i class="fa-solid fa-paper-plane me-2"></i> ส่งข้อความเลย
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       8. Footer Section (ข้อความลิขสิทธิ์ และ ออกแบบโดย Your Name)
+       ======================================================================== -->
+  <footer class="footer-custom">
+    <div class="container">
+      <div class="row gy-4 align-items-center justify-content-between">
+        <div class="col-lg-5 text-center text-lg-start">
+          <div class="footer-brand-title">
+            <span class="text-gradient-primary">CM</span>STUDIO PORTFOLIO
+          </div>
+          <p class="footer-desc">
+            เว็บไซต์รวบรวมผลงานสื่อนฤมิต (Creative Media) ออกแบบและพัฒนาด้วยหัวใจ เพื่อสื่อสารจินตนาการอย่างไร้ขอบเขต
+          </p>
+        </div>
+
+        <div class="col-lg-7 text-center text-lg-end">
+          <ul class="footer-nav justify-content-center justify-content-lg-end mb-3">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div class="d-flex gap-2 justify-content-center justify-content-lg-end">
+            <a href="https://behance.net" class="hero-social-btn" title="Behance"><i class="fa-brands fa-behance"></i></a>
+            <a href="https://github.com" class="hero-social-btn" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://instagram.com" class="hero-social-btn" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://facebook.com" class="hero-social-btn" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          &copy; 2026 My Portfolio. All rights reserved.
+        </p>
+        <p class="footer-designer">
+          Designed by <span class="text-gradient-accent">Your Name</span> (Creative Media Student)
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       9. Scroll to Top Button
+       ======================================================================== -->
+  <button type="button" class="scroll-to-top" id="scrollToTop" title="เลื่อนกลับด้านบน" aria-label="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- ========================================================================
+       10. Glassmorphism Contact Toast Alert
+       ======================================================================== -->
+  <div id="contactToast" class="contact-toast" role="alert" aria-live="polite">
+    <i class="fa-solid fa-circle-check toast-icon"></i>
+    <span class="toast-text">ส่งข้อความเรียบร้อยแล้ว!</span>
+  </div>
+
+  <!-- ========================================================================
+       11. Project Details Modal (Bootstrap 5 Custom Glass Modal)
+       ======================================================================== -->
+  <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="modalProjectTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content custom-glass-modal">
+        <div class="modal-header custom-modal-header">
+          <div>
+            <span class="badge bg-primary-subtle text-primary border border-primary-subtle rounded-pill me-2" id="modalProjectCategory">Category</span>
+            <span class="text-muted small" id="modalProjectDate">Date</span>
+          </div>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <img src="" alt="" id="modalProjectImg" class="modal-img-preview">
+          <h3 class="h4 mt-3 mb-2" id="modalProjectTitle">Project Title</h3>
+          <p class="text-info small mb-3">
+            <i class="fa-solid fa-award me-1"></i> <span id="modalProjectClient">Client/Context</span>
+          </p>
+
+          <p class="mb-4 text-sub" id="modalProjectDesc">Project Description</p>
+
+          <h5 class="h6 mb-2 text-warning"><i class="fa-solid fa-star me-2"></i> จุดเด่นของผลงาน (Project Highlights):</h5>
+          <ul class="list-unstyled ps-2 mb-4" id="modalProjectHighlights">
+            <!-- Dynamically populated -->
+          </ul>
+
+          <h5 class="h6 mb-2 text-primary-light"><i class="fa-solid fa-toolbox me-2"></i> เครื่องมือที่ใช้ (Tech Stack):</h5>
+          <div class="d-flex flex-wrap gap-2 mb-2" id="modalProjectTools">
+            <!-- Dynamically populated -->
+          </div>
+        </div>
+        <div class="modal-footer custom-modal-footer">
+          <button type="button" class="btn btn-outline-secondary rounded-pill px-4" data-bs-dismiss="modal">ปิดหน้าต่าง</button>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="btn-creative-primary" id="modalProjectDemoBtn">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> ดูผลงานฉบับเต็ม
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       JavaScript Libraries & Custom Modular Scripts
+       ======================================================================== -->
+  <!-- Bootstrap 5 Bundle JS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Custom Modular JS Scripts (แยกตามหน้าที่) -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/navbar.js"></script>
+  <script src="assets/js/skills.js"></script>
+  <script src="assets/js/portfolio.js"></script>
+  <script src="assets/js/contact.js"></script>
+</body>
+</html>

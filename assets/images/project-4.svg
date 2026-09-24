@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="p4Bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#030712" />
+      <stop offset="50%" stop-color="#0c1e3d" />
+      <stop offset="100%" stop-color="#021c38" />
+    </linearGradient>
+    <linearGradient id="cyberBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <linearGradient id="neonYellow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde047" />
+      <stop offset="100%" stop-color="#eab308" />
+    </linearGradient>
+    <filter id="p4Glow">
+      <feGaussianBlur stdDeviation="18" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#p4Bg)"/>
+
+  <!-- Perspective 3D Grid on Ground -->
+  <g stroke="#0284c7" stroke-width="1.2" opacity="0.35">
+    <line x1="400" y1="200" x2="0" y2="500" />
+    <line x1="400" y1="200" x2="160" y2="500" />
+    <line x1="400" y1="200" x2="320" y2="500" />
+    <line x1="400" y1="200" x2="480" y2="500" />
+    <line x1="400" y1="200" x2="640" y2="500" />
+    <line x1="400" y1="200" x2="800" y2="500" />
+    
+    <line x1="100" y1="420" x2="700" y2="420" />
+    <line x1="200" y1="350" x2="600" y2="350" />
+    <line x1="280" y1="290" x2="520" y2="290" />
+    <line x1="340" y1="240" x2="460" y2="240" />
+  </g>
+
+  <!-- Floating Isometric 3D Cube -->
+  <g transform="translate(400, 200)">
+    <!-- Top Face -->
+    <polygon points="0,-90 90,-45 0,0 -90,-45" fill="#38bdf8" opacity="0.85" stroke="#ffffff" stroke-width="2"/>
+    <!-- Left Face -->
+    <polygon points="-90,-45 0,0 0,95 -90,50" fill="#0284c7" opacity="0.95" stroke="#ffffff" stroke-width="2"/>
+    <!-- Right Face -->
+    <polygon points="0,0 90,-45 90,50 0,95" fill="#f59e0b" opacity="0.9" stroke="#ffffff" stroke-width="2"/>
+  </g>
+
+  <!-- Glowing Orbiting Rings around 3D Cube -->
+  <ellipse cx="400" cy="205" rx="170" ry="60" fill="none" stroke="url(#neonYellow)" stroke-width="3.5" filter="url(#p4Glow)"/>
+  <circle cx="235" cy="205" r="9" fill="#fde047" filter="url(#p4Glow)"/>
+  <circle cx="565" cy="205" r="9" fill="#38bdf8" filter="url(#p4Glow)"/>
+
+  <!-- Code Snippets in Glass Badges -->
+  <g transform="translate(100, 80)">
+    <rect width="180" height="70" rx="14" fill="rgba(15, 23, 42, 0.75)" stroke="#38bdf8" stroke-width="1.5"/>
+    <text x="20" y="32" font-family="'Courier New', monospace" font-size="12" fill="#38bdf8">&lt;canvas id="webgl"&gt;</text>
+    <text x="35" y="52" font-family="'Courier New', monospace" font-size="12" fill="#fde047">mesh.rotateY(0.01)</text>
+  </g>
+
+  <g transform="translate(520, 80)">
+    <rect width="180" height="70" rx="14" fill="rgba(15, 23, 42, 0.75)" stroke="#f59e0b" stroke-width="1.5"/>
+    <text x="20" y="32" font-family="'Courier New', monospace" font-size="12" fill="#fde047">const scene = new</text>
+    <text x="20" y="52" font-family="'Courier New', monospace" font-size="12" fill="#38bdf8">THREE.Scene();</text>
+  </g>
+
+  <!-- Title Bottom -->
+  <text x="400" y="460" font-family="'Prompt', sans-serif" font-size="20" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="4">CYBERVERSE 3D INTERACTIVE WEB</text>
+</svg>

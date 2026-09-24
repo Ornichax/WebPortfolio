@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="p5Bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0b172a" />
+      <stop offset="50%" stop-color="#1e293b" />
+      <stop offset="85%" stop-color="#78350f" />
+      <stop offset="100%" stop-color="#451a03" />
+    </linearGradient>
+    <linearGradient id="goldenHour" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="50%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+    <filter id="p5Glow">
+      <feGaussianBlur stdDeviation="15" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#p5Bg)"/>
+
+  <!-- Golden Sunset Sphere -->
+  <circle cx="400" cy="300" r="140" fill="url(#goldenHour)" opacity="0.8" filter="url(#p5Glow)"/>
+
+  <!-- City Skyline Silhouette -->
+  <path d="M 50 360 L 90 360 L 90 280 L 130 280 L 130 330 L 170 330 L 170 240 L 210 240 L 210 350 L 260 350 L 260 210 L 300 210 L 300 340 L 360 340 L 360 260 L 390 220 L 420 220 L 450 260 L 450 340 L 510 340 L 510 190 L 560 190 L 560 310 L 610 310 L 610 250 L 660 250 L 660 330 L 710 330 L 710 270 L 750 270 L 750 360 Z" fill="#090d16" />
+
+  <!-- Street Reflections / Light trails -->
+  <path d="M0 450 L 800 450" stroke="#fbbf24" stroke-width="4" opacity="0.7" filter="url(#p5Glow)"/>
+  <path d="M0 470 L 800 470" stroke="#38bdf8" stroke-width="3" opacity="0.6" filter="url(#p5Glow)"/>
+
+  <!-- Camera Aperture Lens Ring Overlay -->
+  <circle cx="400" cy="220" r="120" fill="none" stroke="#38bdf8" stroke-width="3" opacity="0.4"/>
+  <circle cx="400" cy="220" r="85" fill="none" stroke="#f59e0b" stroke-width="2.5" opacity="0.6" stroke-dasharray="10 5"/>
+
+  <!-- Camera Exif Badges -->
+  <g transform="translate(60, 60)">
+    <rect width="180" height="34" rx="17" fill="rgba(15, 23, 42, 0.8)" stroke="#38bdf8" stroke-width="1.5"/>
+    <text x="90" y="22" font-family="'Prompt', sans-serif" font-size="12" font-weight="600" fill="#38bdf8" text-anchor="middle">📷 35mm F/1.4 PRIME</text>
+  </g>
+  <g transform="translate(560, 60)">
+    <rect width="180" height="34" rx="17" fill="rgba(15, 23, 42, 0.8)" stroke="#fbbf24" stroke-width="1.5"/>
+    <text x="90" y="22" font-family="'Prompt', sans-serif" font-size="12" font-weight="600" fill="#fbbf24" text-anchor="middle">ISO 200 • 1/500s</text>
+  </g>
+
+  <!-- Title Bottom -->
+  <text x="400" y="475" font-family="'Prompt', sans-serif" font-size="20" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="4">URBAN ODYSSEY STREET VISUALS</text>
+</svg>
